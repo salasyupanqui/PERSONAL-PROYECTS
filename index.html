@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello </title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Login</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-  <h1>Hello, Putos!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+<body> <!-- -->
+    <div class="login-form">
+      <h2>Bienvenido</h2>
+      <form action="login">
+        <!--<label for="usuario">username</label> -->
+        
+        <input type="text" id="usuario" name="usuario"required placeholder="USUARIO">
+        <br><br>
+        <!-- <label for="password">password</label> -->
+       
+        <input type="password" id="password" name="password"required placeholder="CONTRASEÑA">
+        <br><br>
+        <button class="boton" type="submit">Login</button><br><br>
+        <div class="datos">
+          <label for="recuperacion"><a href="#">Perdiste tu contraseña?</a></label><br>
+        <label for="registrate"> <a href="#">No tienes cuenta?--Registrate!</a></label>
+        </div>    
+      </form>
+    </div>  
 </body>
 </html>
